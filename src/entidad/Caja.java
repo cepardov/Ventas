@@ -21,5 +21,96 @@ package entidad;
  * @author cepardov
  */
 public class Caja {
+    protected String idCaja;
+    protected String idCajaUpdate;
+    protected String idUsuario;
+    protected String fecha;
+    protected String totalDinero;
+    protected String totalDocumentos;
+    protected String subtotal;
+    protected String faltante;
+    protected String sobrante;
+    protected String error;
+
+    public String getIdCaja() {
+        return idCaja;
+    }
+
+    public void setIdCaja(String idCaja) {
+        this.idCaja = idCaja;
+    }
+
+    public String getIdCajaUpdate() {
+        return idCajaUpdate;
+    }
+
+    public void setIdCajaUpdate(String idCajaUpdate) {
+        this.idCajaUpdate = idCajaUpdate;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getTotalDinero() {
+        return totalDinero;
+    }
+
+    public void setTotalDinero(String totalDinero) {
+        this.totalDinero = totalDinero;
+    }
+
+    public String getTotalDocumentos() {
+        return totalDocumentos;
+    }
+
+    public void setTotalDocumentos(String totalDocumentos) {
+        this.totalDocumentos = totalDocumentos;
+    }
+
+    public String getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(String subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public String getFaltante() {
+        return faltante;
+    }
+
+    public void setFaltante(String faltante) {
+        this.faltante = faltante;
+    }
+
+    public String getSobrante() {
+        return sobrante;
+    }
+
+    public void setSobrante(String sobrante) {
+        this.sobrante = sobrante;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+    
     
 }
