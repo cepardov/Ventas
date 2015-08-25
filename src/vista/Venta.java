@@ -180,8 +180,8 @@ public class Venta extends javax.swing.JInternalFrame {
     TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(this.modeloTablaDetalle);
     private void sds(){
         sorter.setRowFilter(RowFilter.regexFilter("7802820600100"));
-        sorter.
-        System.out.println("ds"+sorter);
+//        sorter.
+//        System.out.println("ds"+sorter);
     }
     
     private void comandos(){
