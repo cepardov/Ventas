@@ -14,12 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package entidad;
+package utilidades;
+
+import java.util.UUID;
 
 /**
  *
  * @author cepardov
  */
-public class Caja {
-    
+public class GenerateUUID {
+    public static final void main(String... aArgs){
+    //generate random UUIDs
+    UUID idOne = UUID.randomUUID();
+    UUID idTwo = UUID.randomUUID();
+    log("UUID One: " + idOne);
+    log("UUID Two: " + idTwo);
+  }
+ 
+  private static void log(Object aObject){
+    System.out.println( String.valueOf(aObject) );
+  }
 }

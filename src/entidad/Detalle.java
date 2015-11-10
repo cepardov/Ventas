@@ -23,7 +23,7 @@ package entidad;
 public class Detalle {
     protected String idDetalle;
     protected String idDetalleUpdate;
-    protected String idFactura;
+    protected String idTransaccion;
     protected String idProducto;
     protected String cantidad;
     protected String unitario;
@@ -47,12 +47,12 @@ public class Detalle {
         this.idDetalleUpdate = idDetalleUpdate;
     }
 
-    public String getIdFactura() {
-        return idFactura;
+    public String getIdTransaccion() {
+        return idTransaccion;
     }
 
-    public void setIdFactura(String idFactura) {
-        this.idFactura = idFactura;
+    public void setIdTransaccion(String idTransaccion) {
+        this.idTransaccion = idTransaccion;
     }
 
     public String getIdProducto() {

@@ -3,16 +3,16 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 3 of the License; or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful;
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not; see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package entidad;
 
@@ -20,35 +20,46 @@ package entidad;
  *
  * @author cepardov
  */
-public class Factura {
-    protected String idFactura;
-    protected String idFacturaUpdate;
+public class Transaccion {
+    protected String idTransaccion;
+    protected String idTransaccionUpdate;
+    protected String tipo;
     protected String num;
     protected String fecha;
     protected String totalNeto;
     protected String totalIva;
     protected String total;
-    protected String pagado;
     protected String vuelto;
+    protected String credito;
+    protected String efectivo;
     protected String idVendedor;
     protected String idCliente;
-    protected String idPago;
+    protected String finalizada;
+    protected String token;
     protected String error;
 
-    public String getIdFactura() {
-        return idFactura;
+    public String getIdTransaccion() {
+        return idTransaccion;
     }
 
-    public void setIdFactura(String idFactura) {
-        this.idFactura = idFactura;
+    public void setIdTransaccion(String idTransaccion) {
+        this.idTransaccion = idTransaccion;
     }
 
-    public String getIdFacturaUpdate() {
-        return idFacturaUpdate;
+    public String getIdTransaccionUpdate() {
+        return idTransaccionUpdate;
     }
 
-    public void setIdFacturaUpdate(String idFacturaUpdate) {
-        this.idFacturaUpdate = idFacturaUpdate;
+    public void setIdTransaccionUpdate(String idTransaccionUpdate) {
+        this.idTransaccionUpdate = idTransaccionUpdate;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getNum() {
@@ -91,20 +102,28 @@ public class Factura {
         this.total = total;
     }
 
-    public String getPagado() {
-        return pagado;
-    }
-
-    public void setPagado(String pagado) {
-        this.pagado = pagado;
-    }
-
     public String getVuelto() {
         return vuelto;
     }
 
     public void setVuelto(String vuelto) {
         this.vuelto = vuelto;
+    }
+
+    public String getCredito() {
+        return credito;
+    }
+
+    public void setCredito(String credito) {
+        this.credito = credito;
+    }
+
+    public String getEfectivo() {
+        return efectivo;
+    }
+
+    public void setEfectivo(String efectivo) {
+        this.efectivo = efectivo;
     }
 
     public String getIdVendedor() {
@@ -123,14 +142,22 @@ public class Factura {
         this.idCliente = idCliente;
     }
 
-    public String getIdPago() {
-        return idPago;
+    public String getFinalizada() {
+        return finalizada;
     }
 
-    public void setIdPago(String idPago) {
-        this.idPago = idPago;
+    public void setFinalizada(String finalizada) {
+        this.finalizada = finalizada;
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+    
     public String getError() {
         return error;
     }
